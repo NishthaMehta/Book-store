@@ -1,0 +1,7 @@
+<div class="book">
+    <img src="http://localhost:8080/{{book.images}}" alt={{book.name|titlecase}} srcset="">
+    <p class="title">{{book.name|titlecase}} by <span id="author">{{book.author|titlecase}}</span></p>
+    <p class="currency">{{book.amount|currency:'INR'}}</p>
+    <button *ngIf="!isInCart" (click)="addToCart(book.name)">Add to Cart</button>
+    <button *ngIf="isInCart" (click)="removeFromCart()">Remove</button>
+</div>

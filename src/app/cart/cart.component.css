@@ -1,0 +1,18 @@
+.book{
+    background-color: powderblue;
+    margin:1%;
+    border:1px solid black;
+    padding: 5%;
+    width: 230px;
+}
+.book img{
+    width:90%;
+    height:70% ;
+
+}
+.book p{
+    word-wrap: break-word;
+}
+.book p #author{
+    display: block;
+}
